@@ -22,6 +22,9 @@ public class Program {
 		System.out.printf("===== TEST 2: seller findByDepartment =====%n");
 		sellers = sellerDao.findByDepartment(new Department(2, null));
 		sellers.forEach(System.out::println);
+		System.out.printf("===== TEST 3: seller findAll =====%n");
+		sellers = sellerDao.findAll();
+		sellers.forEach(System.out::println);
 
 	}
 
